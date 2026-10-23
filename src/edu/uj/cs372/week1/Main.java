@@ -11,7 +11,7 @@ One design trade-off that I made was keeping subclasses simple and not adding a 
 In the future, I might be able expand on this like the number of doors for cars or the ability to tow through boolean values. 
 
 
-Github Repo link: 
+Github Repo link: https://github.com/Hulq98/CS-372-Java-Programming
 */
 
 public class Main{
