@@ -1,0 +1,5 @@
+For the IT request system, I chose to use a Hashmap to store requests using their IDs. 
+This make it possible to find a request without searching every single request. 
+I also used an ArrayList for ITRequest to store and filter requests that are open.
+A different way to do this would have been to use an ArrayList for every request but finding a request by its ID would force searching the entire list. 
+Using collections instead of array makes the program easier to build on and use because new requests can be added without making a bigger array. 

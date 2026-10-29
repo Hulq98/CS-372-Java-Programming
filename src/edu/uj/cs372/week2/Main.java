@@ -25,7 +25,7 @@ public class Main {
         }
 
         //Count requests that are open
-        System.out.println("All Open Requests:");
+        System.out.println("Total Open Requests:");
         System.out.println("Total Open Requests: " + manager.countOpenRequests());
 
 }
