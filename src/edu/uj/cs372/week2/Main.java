@@ -18,7 +18,15 @@ public class Main {
         System.out.println("Find Request 101");
         System.out.println(manager.findRequest(102));
 
+        //Print Open Requests
+        System.out.println("Open Requests: ");
+         for (ITRequest request : manager.getOpenRequests()) {
+            System.out.println(request);
+        }
 
+        //Count requests that are open
+        System.out.println("All Open Requests:");
+        System.out.println("Total Open Requests: " + manager.countOpenRequests());
 
 }
 }
