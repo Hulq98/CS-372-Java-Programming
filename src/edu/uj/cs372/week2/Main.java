@@ -16,7 +16,7 @@ public class Main {
 
         //Finding requests
         System.out.println("Find Request 101");
-        System.out.println(manager.findRequest(102));
+        System.out.println(manager.findRequest(101));
 
         //Print Open Requests
         System.out.println("Open Requests: ");
