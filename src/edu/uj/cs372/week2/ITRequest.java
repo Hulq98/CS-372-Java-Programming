@@ -22,5 +22,9 @@ public class ITRequest {
     }
 
     @Override 
-    
+    public String toString(){
+        return "Request ID: " + requestID +
+            ", Employee: " + employeeName +
+            ", Status: " + status;
+    }
 }
