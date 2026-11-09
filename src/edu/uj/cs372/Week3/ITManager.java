@@ -1,4 +1,4 @@
-package edu.uj.cs372.Week 3;
+package edu.uj.cs372.Week3;
 
 public class ITManager {
     
