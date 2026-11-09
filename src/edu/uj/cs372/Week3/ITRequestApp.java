@@ -12,6 +12,10 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+
+//github repo: https://github.com/Hulq98/CS-372-Java-Programming
+//I had issues with the coderunner extension in vscode environment interfering with runtime and causing errors. please email
+//me if there are issues and I can resubmit/sit down virtually to go over what is going on. 
 public class ITRequestApp extends Application {
 
     private ITManager manager = new ITManager();

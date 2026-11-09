@@ -1,3 +1,5 @@
+Github repo: https://github.com/Hulq98/CS-372-Java-Programming
+
 For this weeks project I continued to build the IT Request system with a JavaFX interface. 
 I used event handlers to respond to the user clicking the add request and mark closed buttons. 
 When a user adds a requests the program stores it in a hashmap that updates the list in the interface.
