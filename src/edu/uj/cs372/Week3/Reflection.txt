@@ -1,0 +1,9 @@
+For this weeks project I continued to build the IT Request system with a JavaFX interface. 
+I used event handlers to respond to the user clicking the add request and mark closed buttons. 
+When a user adds a requests the program stores it in a hashmap that updates the list in the interface.
+I added an event filter to keep users from submitting one without a name as well. 
+I separated the GUI from the logic by using the ITRequest App file to have the interface and the ITManager to manage requests. 
+One thing for later on that I would like to add to this is storing requests throughout runs instead of only saving them when it is running.
+
+
+I did have issues running this with the coderunner extension enabled that I use in VSCode, so if there any issues please let me know and I will resubmit. 
