@@ -1,5 +1,6 @@
 package edu.uj.cs372.Week4;
 
+//Import Java FX 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.geometry.Insets;
@@ -22,7 +23,9 @@ import java.nio.file.*;
 import java.util.ArrayList;
 import java.util.List;
 
+
 // GitHub repo: https://github.com/Hulq98/CS-372-Java-Programming
+
 
 public class ITRequestApp extends Application {
 
@@ -36,6 +39,7 @@ public class ITRequestApp extends Application {
     private List<RequestData> savedRequests = new ArrayList<>();
 
     private Label message = new Label("");
+
 
     // Class to keep information used in the CSV file
     private static class RequestData {
@@ -337,7 +341,7 @@ public class ITRequestApp extends Application {
                         fields.get(1).isBlank() ||
                         fields.get(2).isBlank() ||
                         !(fields.get(3).equals("true") ||
-                          fields.get(3).equals("false"))) {
+                        fields.get(3).equals("false"))) {
 
                         skipped++;
                         continue;

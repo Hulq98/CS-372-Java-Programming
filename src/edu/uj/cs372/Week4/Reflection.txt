@@ -1,2 +1,7 @@
 Github repo: https://github.com/Hulq98/CS-372-Java-Programming
 
+For this week, continuing to build the Java IT Request application, I added the ability to save and load requests with a CSV file. 
+I chose the csv method because it is simple and easy to store information like the employee name, description, title, and completion status. 
+Error handling that I put in was if the csv does not exist it shows a message that the file does not exist and without crashing it makes a new one. 
+I added input validation as well to keep requests that are not complete from being submitted and error handling to protect data already in there.
+In the future I could improve this by automatically saving requests when they are submitted or updated so manual saving is not a thing. 
