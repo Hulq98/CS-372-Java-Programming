@@ -12,12 +12,27 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+//New imports
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.util.ArrayList;
+import java.util.List;
+
+
 
 //github repo: https://github.com/Hulq98/CS-372-Java-Programming
 //I had issues with the coderunner extension in vscode environment interfering with runtime and causing errors. please email
 //me if there are issues and I can resubmit/sit down virtually to go over what is going on. 
 public class ITRequestApp extends Application {
 
+
+    //Initializing the csv for storage
+    private static final Path FILE = Path.of("requests.csv");
+    
     private ITManager manager = new ITManager();
     private ListView<ITRequest> requestList = new ListView<>();
 
