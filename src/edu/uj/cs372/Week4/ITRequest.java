@@ -1,4 +1,3 @@
-
 package edu.uj.cs372.Week4;
 
 public class ITRequest {
