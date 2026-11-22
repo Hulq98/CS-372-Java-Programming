@@ -12,3 +12,5 @@ These changes will make it better for testing because I can test each individual
 After refactoring, I tested the new app and made sure everything works. 
 
 Github: https://github.com/Hulq98/CS-372-Java-Programming
+
+Commits were not syncing due to branch not being synced. Everything shows all at once on the repo.
