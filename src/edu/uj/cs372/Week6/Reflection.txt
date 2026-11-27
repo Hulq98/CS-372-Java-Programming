@@ -1,16 +1,14 @@
-For week 5, I re-structured my IT Request app into four packages: Mode, service, persistance, and the interface. 
-Model package holds request information.
-Service manages all of the requests and actions with them.
-Persistence handles saving the CSV and loading it.
-the UI holds the interface. 
-
-One issue that I had with my pervious week 4 code was that the ITRequestApp file did both the interface and file operations. 
-I moved the saving and loading methods from this file to the CSV Request file which added more cohesion and less coupling through giving each class its own responsibility.
-I also updated the ITManager addRequest method to return new requests instead of relying on just the HashMap order. 
-
-These changes will make it better for testing because I can test each individual class on its own and add new features without affecting the entire application.
-After refactoring, I tested the new app and made sure everything works. 
+For my ITRequest project this week, I chose to test the CSVRequest class because it saves and loads the request information.
+I made five JUnit tests that test the saving requests, loading requests, empty file with no requests, invalid data and special character handling. 
+I think the invalid test is important because it checks if the app does not accept wrong information when loading. 
+Before I refactored, the load method contained a long statement that validated the information inside the CSV file. 
+I moved the logic for this into its own helper method IValidRequest. 
+This method makes the load easier to read and maintain.
+All five JUnit tests passed before and after I refactored which helped not breaking the app. 
+I would make the testing better if I had time by testing the Manager class and looking for ways to separate the UI class and logic. 
+The JUnit tests can be run by opening the Testing tab in VS Code and running the test class in the Tests folder. 
+I have put screenshots of before and after the refactoring. 
 
 Github: https://github.com/Hulq98/CS-372-Java-Programming
 
-Commits were not syncing due to branch not being synced. Everything shows all at once on the repo.
+I had some issues with the branching from last week saving for this week. Merged branches and everything shows now. 
