@@ -1,0 +1,16 @@
+For week 5, I re-structured my IT Request app into four packages: Mode, service, persistance, and the interface. 
+Model package holds request information.
+Service manages all of the requests and actions with them.
+Persistence handles saving the CSV and loading it.
+the UI holds the interface. 
+
+One issue that I had with my pervious week 4 code was that the ITRequestApp file did both the interface and file operations. 
+I moved the saving and loading methods from this file to the CSV Request file which added more cohesion and less coupling through giving each class its own responsibility.
+I also updated the ITManager addRequest method to return new requests instead of relying on just the HashMap order. 
+
+These changes will make it better for testing because I can test each individual class on its own and add new features without affecting the entire application.
+After refactoring, I tested the new app and made sure everything works. 
+
+Github: https://github.com/Hulq98/CS-372-Java-Programming
+
+Commits were not syncing due to branch not being synced. Everything shows all at once on the repo.
