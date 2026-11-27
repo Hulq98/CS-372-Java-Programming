@@ -22,9 +22,10 @@ public class CSVRequest {
     public CSVRequest(Path file) {
         this.FILE = file;
     }
-        public boolean fileExists() {
-            return Files.exists(FILE);
-        }
+
+    public boolean fileExists() {
+        return Files.exists(FILE);
+    }
 
     // Save requests to CSV.
     public void save(List<RequestData> requests) throws IOException {
@@ -88,13 +89,7 @@ public class CSVRequest {
                 try {
                     List<String> fields = parseCsv(line);
 
-                    if (fields.size() != 4 ||
-                        fields.get(0).isBlank() ||
-                        fields.get(1).isBlank() ||
-                        fields.get(2).isBlank() ||
-                        !(fields.get(3).equals("true") ||
-                          fields.get(3).equals("false"))) {
-
+                    if (!isValidRequest(fields)) {
                         skipped++;
                         continue;
                     }
@@ -122,6 +117,17 @@ public class CSVRequest {
         }
 
         return loaded;
+    }
+
+    // Validate the information from a CSV row.
+    private boolean isValidRequest(List<String> fields) {
+
+        return fields.size() == 4 &&
+               !fields.get(0).isBlank() &&
+               !fields.get(1).isBlank() &&
+               !fields.get(2).isBlank() &&
+               (fields.get(3).equals("true") ||
+                fields.get(3).equals("false"));
     }
 
     // Format strings for CSV.
