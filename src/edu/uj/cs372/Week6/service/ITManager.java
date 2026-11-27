@@ -1,6 +1,6 @@
 package edu.uj.cs372.Week6.service;
 
-import edu.uj.cs372.Week5.model.ITRequest;
+import edu.uj.cs372.Week6.model.ITRequest;
 import java.util.ArrayList;
 import java.util.HashMap;
 

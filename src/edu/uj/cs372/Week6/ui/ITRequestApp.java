@@ -1,11 +1,12 @@
+
 package edu.uj.cs372.Week6.ui;
 
 // GitHub repo: https://github.com/Hulq98/CS-372-Java-Programming
 
-import edu.uj.cs372.Week5.model.ITRequest;
-import edu.uj.cs372.Week5.model.RequestData;
-import edu.uj.cs372.Week5.service.ITManager;
-import edu.uj.cs372.Week5.persistence.CSVRequest;
+import edu.uj.cs372.Week6.model.ITRequest;
+import edu.uj.cs372.Week6.model.RequestData;
+import edu.uj.cs372.Week6.service.ITManager;
+import edu.uj.cs372.Week6.persistence.CSVRequest;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -23,8 +24,7 @@ public class ITRequestApp extends Application {
 
     private ITManager manager = new ITManager();
 
-    private CSVRequest repository =
-        new CSVRequest();
+    private CSVRequest repository = new CSVRequest();
 
     private ListView<ITRequest> requestList = new ListView<>();
 
