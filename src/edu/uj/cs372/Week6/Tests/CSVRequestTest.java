@@ -1,7 +1,4 @@
-
-package edu.uj.cs372.Week6.tests;
-
-// GitHub repo: https://github.com/Hulq98/CS-372-Java-Programming
+package edu.uj.cs372.Week6.Tests;
 
 import edu.uj.cs372.Week6.persistence.CSVRequest;
 import edu.uj.cs372.Week6.model.RequestData;
