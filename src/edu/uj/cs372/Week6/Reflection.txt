@@ -2,7 +2,7 @@ For my ITRequest project this week, I chose to test the CSVRequest class because
 I made five JUnit tests that test the saving requests, loading requests, empty file with no requests, invalid data and special character handling. 
 I think the invalid test is important because it checks if the app does not accept wrong information when loading. 
 Before I refactored, the load method contained a long statement that validated the information inside the CSV file. 
-I moved the logic for this into its own helper method IValidRequest. 
+I moved the logic for this into its own helper method IsValidRequest. 
 This method makes the load easier to read and maintain.
 All five JUnit tests passed before and after I refactored which helped not breaking the app. 
 I would make the testing better if I had time by testing the Manager class and looking for ways to separate the UI class and logic. 
